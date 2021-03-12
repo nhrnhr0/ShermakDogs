@@ -1,0 +1,369 @@
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}*/
+body {
+  background: #ddd;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mark-strong {
+  display: inline;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.sec-1 {
+  overflow-x: hidden;
+  /*.bg {
+        overflow-x:hidden;
+    
+        //overflow:hidden;
+        width: 100%;
+        height: 100%;
+        background: url('dogsHero.jpg');
+        //background-position: bottom;
+        object-fit: cover;
+        */
+}
+
+.sec-1 .content {
+  height: 100vh;
+  width: 99.5vw;
+  background: url("dogsHero.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sec-1 .content .title-1 {
+  color: white;
+  text-align: center;
+  font-size: 2.2em;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+.sec-1 .content h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+.sec-2 .sec-2-title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.sec-2 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec-2 .content .list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sec-2 .content .list ul li {
+  list-style: none;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-2 .content .list ul li .list-icon {
+  display: inline;
+  width: 75px;
+}
+
+.sec-2 .content .list .list-footer {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sec-2 .content .list .list-footer .mark-strong {
+  display: inline;
+}
+
+.sec-2 .content .lead-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+  background: #d2e2f7;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  margin-left: 25px;
+}
+
+.sec-2 .content .lead-form form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sec-2 .content .lead-form form .lead-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.sec-2 .content .lead-form form input {
+  width: 100%;
+  font-size: 2em;
+}
+
+.sec-2 .content .lead-form form .submit-btn {
+  width: 100%;
+  background-color: yellowgreen;
+  margin-top: 20px;
+  font-size: 2em;
+  border-radius: 15px;
+}
+
+.sec-2 .content .lead-form form .submit-btn:hover {
+  background-color: #84b12b;
+}
+
+.sec-3 .sec-3-title-1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.sec-3 .sec-3-title-2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.sec-3 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec-3 .content .card {
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 300px;
+  max-width: 350px;
+  border: 1px #84b12b solid;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.sec-3 .content .card h2 {
+  text-align: center;
+}
+
+.sec-3 .content .card ul li {
+  font-size: 1.2rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec-4 .about-me {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sec-4 .about-me h2 {
+  text-align: center;
+}
+
+.sec-4 .about-me .text {
+  text-align: center;
+  padding: 10px 30px 30px 10px;
+  font-size: 1.5em;
+}
+
+.sec-4 .youtube-vid {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sec-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec-5 .picture img {
+  max-width: 550px;
+  width: 100%;
+}
+
+.sec-5 .comments {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sec-6 h1 {
+  background-color: #84b12b;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sec-6 .my-form {
+  background-color: royalblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-6 .my-form * {
+  padding-top: 15px;
+}
+
+.sec-6 .my-form .form-cta {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.sec-6 .my-form input {
+  width: 50%;
+  font-size: 2em;
+}
+
+.sec-6 .my-form .submit-btn {
+  width: 10rem;
+  background-color: yellowgreen;
+  margin-top: 20px;
+  font-size: 2em;
+  border-radius: 15px;
+}
+
+.sec-6 .my-form .submit-btn:hover {
+  background-color: #84b12b;
+}
+
+/** {
+    border: 1px solid red;
+}*/
+@media only screen and (max-width: 1000px) {
+  .sec-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec-4 .youtube-vid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sec-2 .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec-5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec-5 .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
