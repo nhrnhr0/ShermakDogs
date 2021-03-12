@@ -27,11 +27,10 @@ body {
 .mark-strong {
   display: inline;
   font-weight: 900;
-  text-decoration: underline;
 }
 
 .sec-1 {
-  overflow-x: hidden;
+  position: relative;
   /*.bg {
         overflow-x:hidden;
     
@@ -44,14 +43,21 @@ body {
         */
 }
 
+.sec-1 .hero-image {
+  width: 100%;
+}
+
 .sec-1 .content {
-  height: 100vh;
-  width: 99.5vw;
-  background: url("dogsHero.jpg");
-  position: relative;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 55px;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,6 +115,7 @@ body {
 }
 
 .sec-2 .content .list ul li .list-icon {
+  color: white;
   display: inline;
   width: 75px;
 }
@@ -117,6 +124,8 @@ body {
   font-size: 2em;
   font-weight: 700;
   text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .sec-2 .content .list .list-footer .mark-strong {
@@ -157,6 +166,13 @@ body {
 .sec-2 .content .lead-form form input {
   width: 100%;
   font-size: 2em;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.sec-2 .content .lead-form form input:hover, .sec-2 .content .lead-form form input:focus {
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 .sec-2 .content .lead-form form .submit-btn {
@@ -182,29 +198,39 @@ body {
 }
 
 .sec-3 .content {
+  /*display: flex;
+        flex: 0 0 30%;
+        flex-wrap: wrap;
+        justify-content: center;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .sec-3 .content .card {
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  /*flex: 1;
+            min-width: 300px;
+            flex-grow: 0;*/
+  /*min-width: 300px;
+            max-width: 350px;*/
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 32%;
+          flex: 1 0 32%;
+  margin: 5px;
+  min-width: 200px;
+  border: 1px #84b12b solid;
+  border-radius: 15px;
+}
+
+.sec-3 .content .card:hover {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  min-width: 300px;
-  max-width: 350px;
-  border: 1px #84b12b solid;
-  margin: 10px;
-  border-radius: 15px;
 }
 
 .sec-3 .content .card h2 {
@@ -222,10 +248,76 @@ body {
           align-items: center;
 }
 
+.sec-3 .content .card ul li:hover .star {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: jump 1s linear alternate;
+          animation: jump 1s linear alternate;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  20% {
+    -webkit-transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+            transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+  }
+  40% {
+    -webkit-transform: translate3d(0, -30%, 0) scale3d(1.5, 0.7, 1);
+            transform: translate3d(0, -30%, 0) scale3d(1.5, 0.7, 1);
+  }
+  60% {
+    -webkit-transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+            transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  20% {
+    -webkit-transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+            transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+  }
+  40% {
+    -webkit-transform: translate3d(0, -30%, 0) scale3d(1.5, 0.7, 1);
+            transform: translate3d(0, -30%, 0) scale3d(1.5, 0.7, 1);
+  }
+  60% {
+    -webkit-transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+            transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+            transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+.jump {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: jump .5s linear alternate;
+          animation: jump .5s linear alternate;
+}
+
 .sec-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sec-4 .about-me {
@@ -236,12 +328,14 @@ body {
 
 .sec-4 .about-me h2 {
   text-align: center;
+  font-size: 2em;
 }
 
 .sec-4 .about-me .text {
   text-align: center;
-  padding: 10px 30px 30px 10px;
-  font-size: 1.5em;
+  font-size: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .sec-4 .youtube-vid {
@@ -256,8 +350,13 @@ body {
   display: flex;
 }
 
+.sec-5 .picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .sec-5 .picture img {
-  max-width: 550px;
   width: 100%;
 }
 
@@ -267,15 +366,36 @@ body {
           flex: 1;
 }
 
+.sec-5 .comments .video {
+  height: 100%;
+}
+
+.sec-5 .comments .video video {
+  height: 100%;
+}
+
 .sec-6 h1 {
   background-color: #84b12b;
   text-align: center;
-  padding: 0px;
-  margin: 0px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.sec-6 h1:hover {
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 .sec-6 .my-form {
   background-color: royalblue;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,23 +411,37 @@ body {
           align-items: center;
 }
 
-.sec-6 .my-form * {
-  padding-top: 15px;
+.sec-6 .my-form:hover, .sec-6 .my-form:focus {
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 .sec-6 .my-form .form-cta {
+  margin-top: 2em;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.5em;
   font-weight: 700;
+}
+
+.sec-6 .my-form .form-cta .mark-strong {
+  font-size: larger;
 }
 
 .sec-6 .my-form input {
   width: 50%;
-  font-size: 2em;
+  margin-top: 2em;
+  font-size: 2.5em;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.sec-6 .my-form input:hover, .sec-6 .my-form input:focus {
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
 .sec-6 .my-form .submit-btn {
-  width: 10rem;
+  padding: 25px;
   background-color: yellowgreen;
   margin-top: 20px;
   font-size: 2em;
@@ -318,9 +452,6 @@ body {
   background-color: #84b12b;
 }
 
-/** {
-    border: 1px solid red;
-}*/
 @media only screen and (max-width: 1000px) {
   .sec-4 {
     -webkit-box-orient: vertical;
@@ -341,12 +472,33 @@ body {
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .sec-1 .content {
+    padding: 10px;
+    top: 0px;
+    -webkit-transform: translate(-50%, 10%);
+            transform: translate(-50%, 10%);
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .sec-1 .content {
+    left: 0px;
+    width: 80%;
+    -webkit-transform: translate(10%, 10%);
+            transform: translate(10%, 10%);
+  }
+  .sec-1 .content .title-1 {
+    display: none;
+  }
   .sec-2 .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .sec-2 .content .lead-form {
+    margin-left: 0px;
   }
   .sec-5 {
     -webkit-box-orient: vertical;
