@@ -580,5 +580,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .sec-5 .picture img {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
