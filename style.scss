@@ -291,18 +291,20 @@ animation: jump .5s linear alternate
     align-items: center;
     .about-me {
         flex: 1;
+        align-self: flex-start;
         
         h2 {
             text-align: center;
             font-size: 2em;
+            padding:0px;
         }
 
         .text {
             text-align: center;
             //padding: 10px 30px 30px 10px;
-            font-size: 2em;
-            padding-left: 3em;
-            padding-right: 3em;
+            font-size: 1.5em;
+            padding-left: 1em;
+            padding-right: 1em;
         }
     }
 
