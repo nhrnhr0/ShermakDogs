@@ -391,6 +391,10 @@ body {
           justify-content: center;
 }
 
+.sec-6 .main-prof {
+  width: 80%;
+}
+
 .sec-7 h1 {
   background-color: #84b12b;
   text-align: center;
