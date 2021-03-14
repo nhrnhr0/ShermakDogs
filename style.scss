@@ -224,13 +224,13 @@ body {
             box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
             margin-left: 25px;
 
-            //justify-content: center;
             form {
                 height: 100%;
                 display: flex;
                 justify-content: space-between;
                 //align-items: center;
                 flex-direction: column;
+                align-items: center;
 
                 .lead-title {
                     text-align: center;
@@ -247,7 +247,7 @@ body {
 
                 input {
                     width: 100%;
-                    max-width: 90vw;
+                    max-width: 70vw;
                     font-size: 2em;
                     transition-duration: .2s;
 
@@ -507,8 +507,7 @@ body {
         }
 
         input {
-
-            width: 50%;
+            width: 80%;
             margin-top: .5em;
             font-size: 2.5em;
 
