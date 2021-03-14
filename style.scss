@@ -402,7 +402,7 @@ animation: jump .5s linear alternate
         input {
 
             width: 50%;
-            margin-top:1em;
+            margin-top:.5em;
             font-size: 2.5em;
             
             transition-duration: .2s;
@@ -414,11 +414,11 @@ animation: jump .5s linear alternate
 
         .submit-btn {
             //width: 10rem;
-            padding:25px;
+            padding:10px;
 
             //padding:10px 80px;
             background-color: yellowgreen;
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 2em;
             border-radius: 15px;
 
