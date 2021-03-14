@@ -438,8 +438,6 @@ body {
 }
 
 .sec-7 .my-form .spam {
-  -webkit-transform: translate(50px, 0px);
-          transform: translate(50px, 0px);
   color: black;
   text-align: center;
   font-size: 0.9rem;
@@ -471,17 +469,31 @@ body {
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
-.sec-7 .my-form .submit-btn {
+.sec-7 .my-form .submit-btn-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sec-7 .my-form .submit-btn-wraper .submit-btn {
   padding: 10px;
   background-color: yellowgreen;
   margin-top: 10px;
   font-size: 2em;
   border-radius: 15px;
-  -webkit-transform: translate(-50px, 0px);
-          transform: translate(-50px, 0px);
 }
 
-.sec-7 .my-form .submit-btn:hover {
+.sec-7 .my-form .submit-btn-wraper .submit-btn:hover {
   background-color: #84b12b;
 }
 

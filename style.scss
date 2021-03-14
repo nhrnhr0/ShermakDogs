@@ -25,6 +25,7 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
 .mark-strong {
     display: inline;
     font-weight: 900;
@@ -33,31 +34,33 @@ body {
 
 .sec-1 {
     position: relative;
-    
+
     .hero-image {
         width: 100%;
     }
+
     .logo {
         position: absolute;
-        bottom:0px;
-        left:0px;
+        bottom: 0px;
+        left: 0px;
         height: 250px;
     }
+
     //overflow-x:hidden;
     //background: url('dogsHero.jpg')  no-repeat center center fixed;
     //background: url('dogsHero.jpg')  no-repeat center top;
     //background-size: cover;
-    .content{
+    .content {
         //border: 1px solid red;
         //background-color: rgba(0,0,0,0.8);
         //box-shadow: 0 15px 25px rgba(0,0,0,.6);
-        padding:20px;
+        padding: 20px;
         border-radius: 55px;
         width: 90%;
         position: absolute;
         top: 30vh;
-        left:50%;
-        transform: translate(-50%,-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -76,6 +79,7 @@ body {
             text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
         }
     }
+
     //height: 80vh;
 
     /*.bg {
@@ -96,7 +100,7 @@ body {
     .sec-2-title {
         text-align: center;
         font-size: 2.2rem;
-        
+
     }
 
     .content {
@@ -114,7 +118,7 @@ body {
                     align-items: center;
 
                     .list-icon {
-                        color:white;
+                        color: white;
                         //background-color: white;
                         display: inline;
                         width: 75px;
@@ -146,8 +150,9 @@ body {
             padding: 25px;
             background: rgb(210, 226, 247);
             border-radius: 25px;
-            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
             margin-left: 25px;
+
             //justify-content: center;
             form {
                 height: 100%;
@@ -164,23 +169,24 @@ body {
                 .spam {
                     transform: translate(0px, 0px);
                     color: black;
-                text-align: center;
-                font-size: 0.9rem;
-                text-shadow: none;
+                    text-align: center;
+                    font-size: 0.9rem;
+                    text-shadow: none;
                 }
 
                 input {
                     width: 100%;
                     font-size: 2em;
                     transition-duration: .2s;
-        &:hover,
-        &:focus{
-            box-shadow: 0 15px 25px rgba(0,0,0,.6);
-                        
-        }
+
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+
+                    }
                 }
-                
-                
+
+
 
                 .submit-btn {
                     width: 100%;
@@ -219,16 +225,18 @@ body {
         justify-content: center;*/
         display: flex;
         flex-wrap: wrap;
-        
+
 
         .card {
             //box-shadow: 0 15px 25px rgba(0,0,0,.6);
-            box-shadow: 0 15px 25px rgba(0,0,0,.3);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .3);
             transition-duration: 150ms;
             background-color: white;
+
             &:hover {
-                box-shadow: 0 15px 25px rgba(0,0,0,.6);
+                box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
             }
+
             //flex: 0 0 30%;
             //flex: 1;
             //flex-basis: 20%;
@@ -237,10 +245,10 @@ body {
             flex-grow: 0;*/
             /*min-width: 300px;
             max-width: 350px;*/
-            flex: 1 0 32%; 
+            flex: 1 0 32%;
             margin: 5px;
             min-width: 200px;
-            
+
             //min-width: 30%;
             border: 1px rgb(132, 177, 43) solid;
             //margin: 10px;
@@ -258,14 +266,15 @@ body {
                     list-style: none;
                     display: flex;
                     align-items: center;
+
                     &:hover {
                         .star {
                             transform-origin: 50% 50%;
-                            animation: jump 1s linear alternate 
+                            animation: jump 1s linear alternate
                         }
                     }
-                    
-                    
+
+
                 }
             }
         }
@@ -273,30 +282,45 @@ body {
 }
 
 @keyframes jump {
-    0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
-    20%  {transform: translate3d(0,-30%,0) scale3d(.7,1.5,1);}
-    40% {transform: translate3d(0,-30%,0) scale3d(1.5,.7,1);}
-    60%  {transform: translate3d(0,-30%,0) scale3d(.7,1.5,1);}
-    80%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
-}
-.jump {
-transform-origin: 50% 50%;
-animation: jump .5s linear alternate 
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
 
+    20% {
+        transform: translate3d(0, -30%, 0) scale3d(.7, 1.5, 1);
+    }
+
+    40% {
+        transform: translate3d(0, -30%, 0) scale3d(1.5, .7, 1);
+    }
+
+    60% {
+        transform: translate3d(0, -30%, 0) scale3d(.7, 1.5, 1);
+    }
+
+    80% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+.jump {
+    transform-origin: 50% 50%;
+    animation: jump .5s linear alternate
 }
 
 .sec-4 {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .about-me {
         flex: 1;
         align-self: flex-start;
-        
+
         h2 {
             text-align: center;
             font-size: 2em;
-            padding:0px;
+            padding: 0px;
         }
 
         .text {
@@ -318,9 +342,10 @@ animation: jump .5s linear alternate
     justify-content: center;
 
     //align-items: center;
-    
+
     .picture {
-    //flex:1;
+
+        //flex:1;
         img {
             max-width: 635px;
             //width: 100%;
@@ -328,26 +353,31 @@ animation: jump .5s linear alternate
     }
 
     .comments {
+
         //align-self: center;
         .video {
             //height: 100%;
-            
+
             //padding-right: 1em;
             video {
                 height: 100%;
                 //width: 100%;
             }
         }
+
         //flex: 2;
     }
 }
+
 .sec-6 {
     display: flex;
     justify-content: center;
+
     .main-prof {
         width: 80%;
     }
 }
+
 .sec-7 {
     h1 {
         background-color: rgb(132, 177, 43);
@@ -356,32 +386,35 @@ animation: jump .5s linear alternate
         margin: 10px;
         border-radius: 25px;
         transition-duration: .2s;
+
         &:hover {
-            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
         }
-        
+
     }
 
     .my-form {
-        
+
         background-color: royalblue;
         padding: 10px;
         margin: 10px;
         border-radius: 25px;
         transition-duration: .2s;
+
         &:hover,
-        &:focus{
-            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        &:focus {
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
         }
-        
-        
+
+
         .spam {
-            transform: translate(50px, 0px);
+            //transform: translate(50px, 0px);
             color: black;
-        text-align: center;
-        font-size: 0.9rem;
-        text-shadow: none;
+            text-align: center;
+            font-size: 0.9rem;
+            text-shadow: none;
         }
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -392,8 +425,9 @@ animation: jump .5s linear alternate
             text-align: center;
             font-size: 2.5em;
             font-weight: 700;
-            color:white;
+            color: white;
             text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+
             .mark-strong {
                 font-size: larger;
             }
@@ -402,31 +436,38 @@ animation: jump .5s linear alternate
         input {
 
             width: 50%;
-            margin-top:.5em;
+            margin-top: .5em;
             font-size: 2.5em;
-            
+
             transition-duration: .2s;
-        &:hover,
-        &:focus{
-            box-shadow: 0 15px 25px rgba(0,0,0,.6);
-        }
-        }
 
-        .submit-btn {
-            //width: 10rem;
-            padding:10px;
-
-            //padding:10px 80px;
-            background-color: yellowgreen;
-            margin-top: 10px;
-            font-size: 2em;
-            border-radius: 15px;
-            transform: translate(-50px, 0px);
-
+            &:hover,
+            &:focus {
+                box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+            }
         }
 
-        .submit-btn:hover {
-            background-color: rgb(132, 177, 43);
+        .submit-btn-wraper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .submit-btn {
+                //width: 10rem;
+                padding: 10px;
+
+                //padding:10px 80px;
+                background-color: yellowgreen;
+                margin-top: 10px;
+                font-size: 2em;
+                border-radius: 15px;
+                //transform: translate(-50px, 0px);
+
+            }
+
+            .submit-btn:hover {
+                background-color: rgb(132, 177, 43);
+            }
         }
     }
 
@@ -438,7 +479,9 @@ animation: jump .5s linear alternate
     padding: 20px 0;
     color: #fff;
     font-size: 18px;
+
     .container {
+
         /*width: 100%;
         padding-right: 15px;
         padding-left: 15px;
@@ -447,11 +490,13 @@ animation: jump .5s linear alternate
         .copyright {
             text-align: center;
         }
+
         .credits {
             padding-top: 10px;
             text-align: center;
             font-size: 13px;
             color: #ccc;
+
             a {
                 color: #60a142;
             }
@@ -483,20 +528,24 @@ animation: jump .5s linear alternate
         }
     }
 }
+
 @media only screen and (max-width: 600px) {
     .sec-1 {
         .content {
             left: 0px;
             width: 80%;
             transform: translate(10%, 10%);
+
             .title-1 {
                 display: none;
             }
         }
     }
+
     .sec-2 {
         .content {
             flex-direction: column;
+
             .lead-form {
                 margin-left: 0px;
             }
@@ -526,4 +575,5 @@ animation: jump .5s linear alternate
         }
     }
 }
+
 // ======= media end ========
