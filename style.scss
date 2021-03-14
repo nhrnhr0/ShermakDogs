@@ -645,6 +645,23 @@ body {
     }
 
 
+    .sec-5 {
+        .comments {
+            .video {
+                video {
+                    max-width: 100vw;
+                }
+            }
+        }
+    }
+
+    .sec-6 {
+        .main-prof{
+            width: 100%;
+            height: auto;
+        }
+    }
+
 
 }
 
