@@ -477,6 +477,8 @@ body {
   margin-top: 10px;
   font-size: 2em;
   border-radius: 15px;
+  -webkit-transform: translate(-50px, 0px);
+          transform: translate(-50px, 0px);
 }
 
 .sec-7 .my-form .submit-btn:hover {
