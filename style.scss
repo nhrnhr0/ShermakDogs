@@ -527,6 +527,22 @@ body {
             transform: translate(-50%, 10%);
         }
     }
+
+    .sec-5 {
+        flex-direction: column;
+
+        .video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .picture {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -559,21 +575,7 @@ body {
     }
 
 
-    .sec-5 {
-        flex-direction: column;
-
-        .video {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .picture {
-            img {
-                max-width: 100%;
-            }
-        }
-    }
+    
 }
 
 // ======= media end ========
