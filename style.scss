@@ -623,8 +623,19 @@ body {
             transform: translate(10%, 10%);
 
             .title-1 {
+                //display: none;
+                font-size: 1.4rem;
+            }
+            h1 {
                 display: none;
             }
+        }
+        .logo {
+            position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 250px;
+    transform: translate(-20px, 30%);
         }
     }
 
