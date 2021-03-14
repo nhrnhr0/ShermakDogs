@@ -86,7 +86,11 @@ body {
 }
 
 .icon-bar .icon.delivery {
-  background-color: lightblue;
+  background-color: #fbfb52;
+}
+
+.icon-bar .icon.delivery .inner-icon {
+  font-size: .9em;
 }
 
 .icon-bar .icon.whatsapp {

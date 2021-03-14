@@ -72,7 +72,10 @@ body {
         }
 
         &.delivery {
-            background-color: lightblue;
+            background-color: rgb(251, 251, 82);
+            .inner-icon {
+                font-size: .9em;
+            }
         }
         &.whatsapp {
             background-color: lightgreen;
