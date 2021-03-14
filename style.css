@@ -27,6 +27,7 @@ body {
 .mark-strong {
   display: inline;
   font-weight: 900;
+  font-size: larger;
 }
 
 .sec-1 {
@@ -47,14 +48,19 @@ body {
   width: 100%;
 }
 
+.sec-1 .logo {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 250px;
+}
+
 .sec-1 .content {
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 55px;
+  width: 90%;
   position: absolute;
-  top: 50vh;
+  top: 30vh;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -76,7 +82,7 @@ body {
 .sec-1 .content .title-1 {
   color: white;
   text-align: center;
-  font-size: 2.2em;
+  font-size: 3.2em;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 
@@ -105,7 +111,7 @@ body {
 
 .sec-2 .content .list ul li {
   list-style: none;
-  font-size: 1.5em;
+  font-size: 1.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,6 +124,8 @@ body {
   color: white;
   display: inline;
   width: 75px;
+  height: 75px;
+  padding-left: 20px;
 }
 
 .sec-2 .content .list .list-footer {
@@ -161,6 +169,15 @@ body {
 .sec-2 .content .lead-form form .lead-title {
   text-align: center;
   font-size: 2em;
+}
+
+.sec-2 .content .lead-form form .spam {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  color: black;
+  text-align: center;
+  font-size: 0.9rem;
+  text-shadow: none;
 }
 
 .sec-2 .content .lead-form form input {
@@ -214,6 +231,7 @@ body {
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 150ms;
           transition-duration: 150ms;
+  background-color: white;
   /*flex: 1;
             min-width: 300px;
             flex-grow: 0;*/
@@ -348,33 +366,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.sec-5 .picture {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sec-5 .picture img {
-  width: 100%;
-}
-
-.sec-5 .comments {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.sec-5 .comments .video {
-  height: 100%;
+  max-width: 635px;
 }
 
 .sec-5 .comments .video video {
   height: 100%;
 }
 
-.sec-6 h1 {
+.sec-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec-7 h1 {
   background-color: #84b12b;
   text-align: center;
   padding: 10px;
@@ -384,12 +398,12 @@ body {
           transition-duration: .2s;
 }
 
-.sec-6 h1:hover {
+.sec-7 h1:hover {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
-.sec-6 .my-form {
+.sec-7 .my-form {
   background-color: royalblue;
   padding: 10px;
   margin: 10px;
@@ -411,36 +425,46 @@ body {
           align-items: center;
 }
 
-.sec-6 .my-form:hover, .sec-6 .my-form:focus {
+.sec-7 .my-form:hover, .sec-7 .my-form:focus {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
-.sec-6 .my-form .form-cta {
-  margin-top: 2em;
+.sec-7 .my-form .spam {
+  -webkit-transform: translate(50px, 0px);
+          transform: translate(50px, 0px);
+  color: black;
+  text-align: center;
+  font-size: 0.9rem;
+  text-shadow: none;
+}
+
+.sec-7 .my-form .form-cta {
   text-align: center;
   font-size: 2.5em;
   font-weight: 700;
+  color: white;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 
-.sec-6 .my-form .form-cta .mark-strong {
+.sec-7 .my-form .form-cta .mark-strong {
   font-size: larger;
 }
 
-.sec-6 .my-form input {
+.sec-7 .my-form input {
   width: 50%;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 2.5em;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
 
-.sec-6 .my-form input:hover, .sec-6 .my-form input:focus {
+.sec-7 .my-form input:hover, .sec-7 .my-form input:focus {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
-.sec-6 .my-form .submit-btn {
+.sec-7 .my-form .submit-btn {
   padding: 25px;
   background-color: yellowgreen;
   margin-top: 20px;
@@ -448,8 +472,38 @@ body {
   border-radius: 15px;
 }
 
-.sec-6 .my-form .submit-btn:hover {
+.sec-7 .my-form .submit-btn:hover {
   background-color: #84b12b;
+}
+
+#footer {
+  background: #343b40;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+#footer .container {
+  /*width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;*/
+}
+
+#footer .container .copyright {
+  text-align: center;
+}
+
+#footer .container .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+}
+
+#footer .container .credits a {
+  color: #60a142;
 }
 
 @media only screen and (max-width: 1000px) {
