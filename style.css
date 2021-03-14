@@ -416,10 +416,6 @@ body {
           animation: jump .5s linear alternate;
 }
 
-.sec-4-title {
-  text-align: center;
-}
-
 .sec-4 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,6 +453,10 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.sec-5-title {
+  text-align: center;
 }
 
 .sec-5 {
