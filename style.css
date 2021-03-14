@@ -670,7 +670,7 @@ body {
             transform: translate(10%, 10%);
   }
   .sec-1 .content .title-1 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .sec-1 .content h1 {
     display: none;
@@ -680,8 +680,8 @@ body {
     bottom: 0px;
     left: 0px;
     height: 250px;
-    -webkit-transform: translate(-20px, 30%);
-            transform: translate(-20px, 30%);
+    -webkit-transform: translate(50%, 30%);
+            transform: translate(50%, 30%);
   }
   .sec-2 .content {
     -webkit-box-orient: vertical;
