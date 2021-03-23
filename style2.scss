@@ -345,7 +345,7 @@ body {
             }
 
             ul {
-
+                padding:10px;
                 li {
                     font-size: 1.2rem;
                     list-style: none;
@@ -456,6 +456,7 @@ body {
         //justify-content: center;
         .reviews {
             img {
+                height: 100%;
                 max-height: 221px;
             }
         }
@@ -665,6 +666,7 @@ body {
         align-items: center;
         .review {
             img {
+                height: 100%;
                 max-width: 100%;
             }
         }

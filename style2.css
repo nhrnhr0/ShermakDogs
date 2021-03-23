@@ -350,6 +350,10 @@ body {
   text-align: center;
 }
 
+.sec-3 .content .card ul {
+  padding: 10px;
+}
+
 .sec-3 .content .card ul li {
   font-size: 1.2rem;
   list-style: none;
@@ -509,6 +513,7 @@ body {
 }
 
 .sec-5 .comments .reviews img {
+  height: 100%;
   max-height: 221px;
 }
 
@@ -713,6 +718,7 @@ body {
         }*/
   }
   .sec-5 .review img {
+    height: 100%;
     max-width: 100%;
   }
   .sec-5 .picture img {
