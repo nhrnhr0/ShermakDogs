@@ -19,7 +19,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }*/
 body {
-  background: #ddd;
+  background: -webkit-gradient(linear, left top, right top, from(#985321), color-stop(#a26234), color-stop(#ab7048), color-stop(#b47f5b), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#b47f5b), color-stop(#ab7048), color-stop(#a26234), to(#985321));
+  background: linear-gradient(to right, #985321, #a26234, #ab7048, #b47f5b, #bc8e6f, #bc8e6f, #bc8e6f, #bc8e6f, #b47f5b, #ab7048, #a26234, #985321);
   padding: 0px;
   margin: 0px;
 }
@@ -195,9 +196,13 @@ body {
           flex: 1;
 }
 
+.sec-2 .content .list ul {
+  padding: 0px;
+}
+
 .sec-2 .content .list ul li {
   list-style: none;
-  font-size: 1.8em;
+  font-size: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,9 +214,9 @@ body {
 .sec-2 .content .list ul li .list-icon {
   color: white;
   display: inline;
-  width: 75px;
-  height: 75px;
-  padding-left: 20px;
+  width: 50px;
+  height: 50px;
+  padding-left: .5em;
 }
 
 .sec-2 .content .list .list-footer {
@@ -354,6 +359,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.sec-3 .content .card ul li .star {
+  height: 40px;
+  width: 40px;
 }
 
 .sec-3 .content .card ul li:hover .star {
@@ -652,6 +662,10 @@ body {
   .sec-1 .logo {
     max-width: 50vw;
   }
+  .sec-2 .content .list ul li {
+    list-style: none;
+    font-size: 1.7em;
+  }
   .sec-5 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -680,9 +694,7 @@ body {
   }
   .sec-1 .content {
     position: absolute;
-    top: 50%;
-    -webkit-transform: translate(-50%, -100%);
-            transform: translate(-50%, -100%);
+    top: 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -722,6 +734,9 @@ body {
   }
   .sec-2 .content .lead-form {
     margin-left: 0px;
+  }
+  .sec-2 .content .list ul {
+    padding: 0px;
   }
   .sec-5 .comments .video video {
     max-width: 100vw;
