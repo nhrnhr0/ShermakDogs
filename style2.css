@@ -18,6 +18,87 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }*/
+@font-face {
+  font-family: 'OpenSans';
+  src: url("opensanshebrew-extrabold-webfont.eot");
+  src: url("opensanshebrew-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("opensanshebrew-extrabold-webfont.woff") format("woff"), url("opensanshebrew-extrabold-webfont.ttf") format("truetype"), url("opensanshebrew-extrabold-webfont.svg#OpenSans") format("svg");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/opensanshebrew-bolditalic-webfont.eot");
+  src: url("fonts/opensanshebrew-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensanshebrew-bolditalic-webfont.woff") format("woff"), url("fonts/opensanshebrew-bolditalic-webfont.ttf") format("truetype"), url("fonts/opensanshebrew-bolditalic-webfont.svg#OpenSans") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/opensanshebrew-bold-webfont.eot");
+  src: url("fonts/opensanshebrew-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensanshebrew-bold-webfont.woff") format("woff"), url("fonts/opensanshebrew-bold-webfont.ttf") format("truetype"), url("fonts/opensanshebrew-bold-webfont.svg#OpenSans") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/opensanshebrew-light-webfont.eot");
+  src: url("fonts/opensanshebrew-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensanshebrew-light-webfont.woff") format("woff"), url("fonts/opensanshebrew-light-webfont.ttf") format("truetype"), url("fonts/opensanshebrew-light-webfont.svg#OpenSans") format("svg");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/opensanshebrew-italic-webfont.eot");
+  src: url("fonts/opensanshebrew-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensanshebrew-italic-webfont.woff") format("woff"), url("fonts/opensanshebrew-italic-webfont.ttf") format("truetype"), url("fonts/opensanshebrew-italic-webfont.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/opensanshebrew-extrabolditalic-webfont.eot");
+  src: url("fonts/opensanshebrew-extrabolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensanshebrew-extrabolditalic-webfont.woff") format("woff"), url("fonts/opensanshebrew-extrabolditalic-webfont.ttf") format("truetype"), url("fonts/opensanshebrew-extrabolditalic-webfont.svg#OpenSans") format("svg");
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/opensanshebrew-regular-webfont.eot");
+  src: url("fonts/opensanshebrew-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensanshebrew-regular-webfont.woff") format("woff"), url("fonts/opensanshebrew-regular-webfont.ttf") format("truetype"), url("fonts/opensanshebrew-regular-webfont.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("fonts/opensanshebrew-lightitalic-webfont.eot");
+  src: url("fonts/opensanshebrew-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensanshebrew-lightitalic-webfont.woff") format("woff"), url("fonts/opensanshebrew-lightitalic-webfont.ttf") format("truetype"), url("fonts/opensanshebrew-lightitalic-webfont.svg#OpenSans") format("svg");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+* {
+  font-family: 'OpenSans';
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'open_sans_hebrewregular';
+}
+
+:root {
+  --clr-bright: hsl(38, 50%, 97%);
+  --clr-bright-2: hsl(38, 50%, 87%);
+  --clr-dark: hsl(37, 55%, 84%);
+  --clr-dark-2: hsl(37, 55%, 74%);
+}
+
 body {
   background: -webkit-gradient(linear, left top, right top, from(#985321), color-stop(#a26234), color-stop(#ab7048), color-stop(#b47f5b), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#b47f5b), color-stop(#ab7048), color-stop(#a26234), to(#985321));
   background: linear-gradient(to right, #985321, #a26234, #ab7048, #b47f5b, #bc8e6f, #bc8e6f, #bc8e6f, #bc8e6f, #b47f5b, #ab7048, #a26234, #985321);
@@ -236,7 +317,7 @@ body {
       -ms-flex: 1;
           flex: 1;
   padding: 25px;
-  background: #d2e2f7;
+  background: var(--clr-bright);
   border-radius: 25px;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
@@ -289,14 +370,14 @@ body {
 
 .sec-2 .content .lead-form form .submit-btn {
   width: 100%;
-  background-color: yellowgreen;
+  background-color: var(--clr-dark);
   margin-top: 20px;
   font-size: 2em;
   border-radius: 15px;
 }
 
 .sec-2 .content .lead-form form .submit-btn:hover {
-  background-color: #84b12b;
+  background-color: var(--clr-dark-2);
 }
 
 .sec-3 .sec-3-title-1 {
@@ -535,7 +616,7 @@ body {
 }
 
 .sec-7 h1 {
-  background-color: #84b12b;
+  background-color: var(--clr-bright);
   text-align: center;
   padding: 10px;
   margin: 10px;
@@ -550,7 +631,7 @@ body {
 }
 
 .sec-7 .my-form {
-  background-color: royalblue;
+  background-color: var(--clr-dark);
   padding: 10px;
   margin: 10px;
   border-radius: 25px;
@@ -626,14 +707,14 @@ body {
 
 .sec-7 .my-form .submit-btn-wraper .submit-btn {
   padding: 10px;
-  background-color: yellowgreen;
+  background-color: var(--clr-bright);
   margin-top: 10px;
   font-size: 2em;
   border-radius: 15px;
 }
 
 .sec-7 .my-form .submit-btn-wraper .submit-btn:hover {
-  background-color: #84b12b;
+  background-color: var(--clr-bright-2);
 }
 
 #footer {
