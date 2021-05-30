@@ -161,7 +161,26 @@ html {
 
 
 
+#mouse_trace {
+    
+    .paw{
+        animation: paw-animation;
+        animation-duration: 1s;
+        opacity: 0;
+    }
+}
 
+@keyframes paw-animation {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 $bg-clr: linear-gradient(to right, #985321, #a26234, #ab7048, #b47f5b, #bc8e6f, #bc8e6f, #bc8e6f, #bc8e6f, #b47f5b, #ab7048, #a26234, #985321); //#985321;
 
