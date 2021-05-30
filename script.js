@@ -113,6 +113,6 @@ function draw_trace_interval() {
     }
 }
 const trace_interval_val = 50;
-const trace_delete = 350000
+const trace_delete = 5000;
 setInterval(draw_trace_interval, trace_interval_val);
 
