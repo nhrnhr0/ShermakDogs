@@ -27,7 +27,6 @@ function handleSideIcons(scrollPos) {
 }
 document.addEventListener('scroll', function(e) {
     lastKnownScrollPosition = window.scrollY;
-    console.log(lastKnownScrollPosition);
     if (!ticking) {
         window.requestAnimationFrame(function() {
           handleSideIcons(lastKnownScrollPosition);
@@ -42,7 +41,6 @@ document.addEventListener('scroll', function(e) {
 
 for(var i = 0; i < side_icons.length; i++) {
     side_icons[i].addEventListener('click', (event)=> {
-        console.log('show');
         if(event.currentTarget.classList.contains('show')) {
             event.currentTarget.classList.remove('show');
         }else {
@@ -64,18 +62,25 @@ for(var i = 0; i < side_icons.length; i++) {
 }
 
 
-var clientX= 0, clientY=0;
+var clientX= 100, clientY=100;
 document.querySelector('body').addEventListener('mousemove', function(e) {
-    console.log('mouse move: ', e);
-    clientX = e.pageX;
-    
-    clientY = e.pageY;
+    handle_pointer_move(e.pageX, e.pageY);
+});
+document.querySelector('body').addEventListener('touchmove', function(e) {
+    if(e.touches.length >0) {
+        handle_pointer_move(e.touches[0].pageX,e.touches[0].pageY);
+    }
 });
 
-var lastClientX = 0; var lastClientY=0;
+function handle_pointer_move(pageX, pageY) {
+    clientX = pageX;
+    
+    clientY = pageY;
+}
+
+var lastClientX = 100; var lastClientY=100;
 var tracer_container = document.querySelector('#mouse_trace');
 function draw_trace_interval() {
-    console.log('draw_trace_interval: ', clientX, clientY);
     if(lastClientX != clientX || lastClientY != clientY) {
         var img = document.createElement('img');
         img.src='./Paw_Print.svg';
@@ -95,8 +100,11 @@ function draw_trace_interval() {
         
         var offsetX = lastClientX-clientX;
         var offsetY = lastClientY-clientY;
+        console.log(lastClientX);
         if(Math.abs(offsetX)>25 || Math.abs(offsetY) >25){
-            tracer_container.appendChild(img);
+            if(lastClientX > 15) {
+                tracer_container.appendChild(img);
+            }
             
             lastClientX= clientX;
             lastClientY =clientY;
