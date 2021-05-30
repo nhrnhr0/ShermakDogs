@@ -1,0 +1,43 @@
+body {
+  background-color: #985321;
+  background-image: -webkit-gradient(linear, left top, right top, from(#985321), color-stop(#a26234), color-stop(#ab7048), color-stop(#b47f5b), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#b47f5b), color-stop(#ab7048), color-stop(#a26234), to(#985321));
+  background-image: linear-gradient(to right, #985321, #a26234, #ab7048, #b47f5b, #bc8e6f, #bc8e6f, #bc8e6f, #bc8e6f, #b47f5b, #ab7048, #a26234, #985321);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.inner {
+  text-align: center;
+  background-color: #494949;
+  -webkit-box-shadow: -1px 1px 39px 4px black;
+          box-shadow: -1px 1px 39px 4px black;
+  padding: 40px;
+  border-radius: 25px;
+  color: white;
+}
+
+.inner .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/*# sourceMappingURL=success.css.map */
