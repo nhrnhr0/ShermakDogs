@@ -100,7 +100,6 @@ function draw_trace_interval() {
         
         var offsetX = lastClientX-clientX;
         var offsetY = lastClientY-clientY;
-        console.log(lastClientX);
         if(Math.abs(offsetX)>25 || Math.abs(offsetY) >25){
             if(lastClientX > 15) {
                 tracer_container.appendChild(img);
