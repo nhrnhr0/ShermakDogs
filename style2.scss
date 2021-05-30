@@ -220,19 +220,26 @@ body {
         }
 
         &.delivery {
-            background-color: rgb(251, 251, 82);
-
+            //background-color: rgb(251, 251, 82);
+            
+            background:linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
             .inner-icon {
                 font-size: .9em;
             }
         }
 
         &.whatsapp {
-            background-color: lightgreen;
+            background: radial-gradient(circle farthest-corner at 35% 90%, #2c887d, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #25D366, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #25D366, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #25D366, transparent), linear-gradient(#25D366, #2b635c 30%, #25D366 50%, #196960 70%, #075E54 100%);
+            //background:linear-gradient(45deg, #075E54, #128C7E, #25D366);
         }
 
         &.facebook {
-            background-color: #4267B2;
+            //background-color: #4267B2;
+            
+            //background: radial-gradient(circle farthest-corner at 35% 90%, #3b5998, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #3b5998, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #2c4374, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #4c78d8, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #3759a1, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #3769d3, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #084de2, transparent), linear-gradient(#cccccc, #929db3 30%, #8894af 50%, #69799e 70%, #4e669b 100%);
+            //background: linear-gradient(top, #3b5998, #2b4170);
+
+            background:linear-gradient(45deg, #2b4170, #3b5998, #4c659c, #2b4170,#4c659c, #3b5998, #2b4170);
         }
 
         &.instegram {

@@ -44,7 +44,6 @@ side_icons
 for(var i = 0; i < side_icons.length; i++) {
     side_icons[i].addEventListener('click', (event)=> {
         console.log('show');
-        debugger;
         if(event.currentTarget.classList.contains('show')) {
             event.currentTarget.classList.remove('show');
         }else {

@@ -170,7 +170,7 @@ body {
 }
 
 .icon-bar .icon.delivery {
-  background-color: #fbfb52;
+  background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 }
 
 .icon-bar .icon.delivery .inner-icon {
@@ -178,11 +178,12 @@ body {
 }
 
 .icon-bar .icon.whatsapp {
-  background-color: lightgreen;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #2c887d, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #25D366, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #25D366, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #25D366, transparent), -webkit-gradient(linear, left top, left bottom, from(#25D366), color-stop(30%, #2b635c), color-stop(50%, #25D366), color-stop(70%, #196960), to(#075E54));
+  background: radial-gradient(circle farthest-corner at 35% 90%, #2c887d, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #25D366, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #25D366, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #128C7E, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #25D366, transparent), linear-gradient(#25D366, #2b635c 30%, #25D366 50%, #196960 70%, #075E54 100%);
 }
 
 .icon-bar .icon.facebook {
-  background-color: #4267B2;
+  background: linear-gradient(45deg, #2b4170, #3b5998, #4c659c, #2b4170, #4c659c, #3b5998, #2b4170);
 }
 
 .icon-bar .icon.instegram {
