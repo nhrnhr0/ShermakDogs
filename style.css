@@ -99,6 +99,7 @@ html {
   --clr-dark-2: hsl(37, 55%, 74%);
   --clr-brown: hsl(24, 36%, 59%);
   --clr-brown-2: hsl(24, 36%, 69%);
+  --defualt-font-size: 1.9rem;
 }
 
 #mouse_trace .paw {
@@ -139,6 +140,7 @@ body {
   background: linear-gradient(to right, #985321, #a26234, #ab7048, #b47f5b, #bc8e6f, #bc8e6f, #bc8e6f, #bc8e6f, #b47f5b, #ab7048, #a26234, #985321);
   padding: 0px;
   margin: 0px;
+  font-size: var(--defualt-font-size);
 }
 
 .icon-bar {
@@ -290,22 +292,22 @@ body {
 
 .sec-1 .content .title-1 {
   text-align: center;
-  font-size: 3.2em;
 }
 
 .sec-1 .content h1 {
+  font-size: var(--defualt-font-size);
   text-align: center;
 }
 
 .sec-2 .title-1 {
   text-align: center;
-  font-size: 2.5rem;
+  /*ont-size: 2.5rem;*/
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .sec-2 .sec-2-title {
   text-align: center;
-  font-size: 2.2rem;
+  /*font-size: 2.2rem;*/
 }
 
 .sec-2 .content {
@@ -326,7 +328,7 @@ body {
 
 .sec-2 .content .list ul li {
   list-style: none;
-  font-size: 2em;
+  /*font-size: 2em;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,7 +346,6 @@ body {
 }
 
 .sec-2 .content .list .list-footer {
-  font-size: 2em;
   font-weight: 700;
   text-align: center;
   padding-left: 1em;
@@ -386,7 +387,6 @@ body {
 
 .sec-2 .content .lead-form form .lead-title {
   text-align: center;
-  font-size: 2em;
 }
 
 .sec-2 .content .lead-form form .spam {
@@ -401,7 +401,7 @@ body {
 .sec-2 .content .lead-form form input {
   width: 100%;
   max-width: 70vw;
-  font-size: 2em;
+  font-size: var(--defualt-font-size);
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
   background-color: var(--clr-dark);
@@ -430,6 +430,7 @@ body {
 }
 
 .sec-3 .sec-3-title-2 {
+  font-size: var(--defualt-font-size);
   text-align: center;
   font-weight: 700;
 }
@@ -575,13 +576,13 @@ body {
 
 .sec-4 .about-me h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: var(--defualt-font-size);
   padding: 0px;
 }
 
 .sec-4 .about-me .text {
   text-align: center;
-  font-size: 1.5em;
+  font-size: var(--defualt-font-size);
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -609,6 +610,7 @@ body {
 
 .sec-5-title {
   text-align: center;
+  font-size: var(--defualt-font-size);
 }
 
 .sec-5 {
@@ -680,6 +682,7 @@ body {
 }
 
 .sec-7 h1 {
+  font-size: var(--defualt-font-size);
   background-color: var(--clr-bright);
   text-align: center;
   padding: 10px;
@@ -695,6 +698,7 @@ body {
 }
 
 .sec-7 .my-form {
+  font-size: var(--defualt-font-size);
   background-color: var(--clr-dark);
   padding: 10px;
   margin: 10px;
@@ -730,7 +734,6 @@ body {
 
 .sec-7 .my-form .form-cta {
   text-align: center;
-  font-size: 2.5em;
   font-weight: 700;
   color: black;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -740,21 +743,38 @@ body {
   font-size: larger;
 }
 
-.sec-7 .my-form input {
-  width: 80%;
+.sec-7 .my-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 80%;
+}
+
+.sec-7 .my-form form input {
+  width: 100%;
   margin-top: .5em;
-  font-size: 2.5em;
+  font-size: var(--defualt-font-size);
   background-color: var(--clr-brown);
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
 
-.sec-7 .my-form input:hover, .sec-7 .my-form input:focus {
+.sec-7 .my-form form input:hover, .sec-7 .my-form form input:focus {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
-.sec-7 .my-form .submit-btn-wraper {
+.sec-7 .my-form form .submit-btn-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,7 +790,7 @@ body {
           flex-direction: column;
 }
 
-.sec-7 .my-form .submit-btn-wraper .submit-btn {
+.sec-7 .my-form form .submit-btn-wraper .submit-btn {
   padding: 10px;
   background-color: var(--clr-brown);
   margin-top: 10px;
@@ -778,7 +798,7 @@ body {
   border-radius: 15px;
 }
 
-.sec-7 .my-form .submit-btn-wraper .submit-btn:hover {
+.sec-7 .my-form form .submit-btn-wraper .submit-btn:hover {
   background-color: var(--clr-brown-2);
 }
 

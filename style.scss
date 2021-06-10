@@ -157,6 +157,8 @@ html {
     
     --clr-brown: hsl(24, 36%, 59%);
     --clr-brown-2: hsl(24, 36%, 69%);
+
+    --defualt-font-size: 1.9rem;
 }
 
 
@@ -189,6 +191,7 @@ body {
     background: $bg-clr;
     padding: 0px;
     margin: 0px;
+    font-size: var(--defualt-font-size);
 }
 
 .icon-bar {
@@ -323,12 +326,13 @@ body {
 
         .title-1 {
             text-align: center;
-            font-size: 3.2em;
+            //font-size: 3.2em;
             //color:white;
             //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         }
 
         h1 {
+            font-size: var(--defualt-font-size);
             text-align: center;
             //color: white;
             //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -353,12 +357,12 @@ body {
 .sec-2 {
     .title-1 {
         text-align: center;
-        font-size: 2.5rem;
+        /*ont-size: 2.5rem;*/
         text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
     .sec-2-title {
         text-align: center;
-        font-size: 2.2rem;
+        /*font-size: 2.2rem;*/
 
     }
 
@@ -374,7 +378,7 @@ body {
                 li {
                     list-style: none;
                     //line-height: 55px;
-                    font-size: 2em;
+                    /*font-size: 2em;*/
                     display: flex;
                     align-items: center;
 
@@ -391,7 +395,7 @@ body {
             }
 
             .list-footer {
-                font-size: 2em;
+                //font-size: 2em;
                 font-weight: 700;
                 text-align: center;
                 padding-left: 1em;
@@ -424,7 +428,7 @@ body {
 
                 .lead-title {
                     text-align: center;
-                    font-size: 2em;
+                    //font-size: 2em;
                 }
 
                 .spam {
@@ -438,7 +442,8 @@ body {
                 input {
                     width: 100%;
                     max-width: 70vw;
-                    font-size: 2em;
+                    //font-size: 2em;
+                    font-size: var(--defualt-font-size);;
                     transition-duration: .2s;
                     background-color: var(--clr-dark);
 
@@ -477,6 +482,7 @@ body {
     }
 
     .sec-3-title-2 {
+        font-size: var(--defualt-font-size);
         text-align: center;
         font-weight: 700;
     }
@@ -587,14 +593,16 @@ body {
 
         h2 {
             text-align: center;
-            font-size: 2em;
+            //font-size: 2em;
+            font-size: var(--defualt-font-size);
             padding: 0px;
         }
 
         .text {
             text-align: center;
             //padding: 10px 30px 30px 10px;
-            font-size: 1.5em;
+            //font-size: 1.5em;
+            font-size: var(--defualt-font-size);
             padding-left: 1em;
             padding-right: 1em;
         }
@@ -622,6 +630,7 @@ body {
 
 .sec-5-title {
     text-align: center;
+    font-size: var(--defualt-font-size);
 }
 
 .sec-5 {
@@ -688,6 +697,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
 .sec-7 {
     h1 {
+        font-size: var(--defualt-font-size);
         background-color: var(--clr-bright);
         text-align: center;
         padding: 10px;
@@ -702,12 +712,13 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     }
 
     .my-form {
-
+        font-size: var(--defualt-font-size);
         background-color: var(--clr-dark);
         padding: 10px;
         margin: 10px;
         border-radius: 25px;
         transition-duration: .2s;
+
 
         &:hover,
         &:focus {
@@ -731,7 +742,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
         .form-cta {
             //margin-top: .7em;
             text-align: center;
-            font-size: 2.5em;
+            //font-size: 2.5em;
             font-weight: 700;
             color: black;
             //text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
@@ -741,11 +752,18 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
                 font-size: larger;
             }
         }
-
+        form {
+            
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 80%;
         input {
-            width: 80%;
+            width: 100%;
             margin-top: .5em;
-            font-size: 2.5em;
+            //font-size: 2.5em;
+            font-size: var(--defualt-font-size);
             background-color:var(--clr-brown );
             transition-duration: .2s;
 
@@ -777,6 +795,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
             .submit-btn:hover {
                 background-color:  var(--clr-brown-2);
             }
+        }
         }
     }
 
