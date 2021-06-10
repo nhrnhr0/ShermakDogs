@@ -453,6 +453,7 @@ body {
   -webkit-transition-duration: 150ms;
           transition-duration: 150ms;
   background-color: white;
+  font-size: var(--defualt-font-size);
   /*flex: 1;
             min-width: 300px;
             flex-grow: 0;*/
@@ -474,6 +475,7 @@ body {
 
 .sec-3 .content .card h2 {
   text-align: center;
+  font-size: var(--defualt-font-size);
 }
 
 .sec-3 .content .card ul {
@@ -794,7 +796,7 @@ body {
   padding: 10px;
   background-color: var(--clr-brown);
   margin-top: 10px;
-  font-size: 2em;
+  font-size: var(--defualt-font-size);
   border-radius: 15px;
 }
 
