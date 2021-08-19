@@ -136,8 +136,7 @@ html {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#985321), color-stop(#a26234), color-stop(#ab7048), color-stop(#b47f5b), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#bc8e6f), color-stop(#b47f5b), color-stop(#ab7048), color-stop(#a26234), to(#985321));
-  background: linear-gradient(to right, #985321, #a26234, #ab7048, #b47f5b, #bc8e6f, #bc8e6f, #bc8e6f, #bc8e6f, #b47f5b, #ab7048, #a26234, #985321);
+  background: #fbf0e6;
   padding: 0px;
   margin: 0px;
   font-size: var(--defualt-font-size);
@@ -736,9 +735,7 @@ body {
 
 .sec-7 .my-form .form-cta {
   text-align: center;
-  font-weight: 700;
   color: black;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .sec-7 .my-form .form-cta .mark-strong {

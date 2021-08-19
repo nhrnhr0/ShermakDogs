@@ -188,7 +188,7 @@ html {
 $bg-clr: linear-gradient(to right, #985321, #a26234, #ab7048, #b47f5b, #bc8e6f, #bc8e6f, #bc8e6f, #bc8e6f, #b47f5b, #ab7048, #a26234, #985321); //#985321;
 
 body {
-    background: $bg-clr;
+    background: #fbf0e6;//$bg-clr;
     padding: 0px;
     margin: 0px;
     font-size: var(--defualt-font-size);
@@ -746,10 +746,10 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
             //margin-top: .7em;
             text-align: center;
             //font-size: 2.5em;
-            font-weight: 700;
+            //font-weight: 700;
             color: black;
             //text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
             .mark-strong {
                 font-size: larger;
